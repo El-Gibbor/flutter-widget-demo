@@ -18,5 +18,4 @@ flutter run
 | `dropdownColor` | `white` | Background color of the menu | Match the app's theme |
 
 ## Screenshot
-
-![App Screenshot](<img width="369" height="797" alt="Image" src="https://github.com/user-attachments/assets/9797eca3-5390-4bfb-bff7-1f73ce37a1e8" />)
+<img width="369" height="797" alt="Image" src="https://github.com/user-attachments/assets/9797eca3-5390-4bfb-bff7-1f73ce37a1e8" />
