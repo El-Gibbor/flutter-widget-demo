@@ -45,12 +45,6 @@ class _WidgetDemoState extends State<WidgetDemo> {
 
   @override
   Widget build(BuildContext context) {
-    // This method is rerun every time setState is called, for instance as done
-    // by the _incrementCounter method above.
-    //
-    // The Flutter framework has been optimized to make rerunning build methods
-    // fast, so that you can just rebuild anything that needs updating rather
-    // than having to individually change instances of widgets.
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.indigo,
@@ -181,8 +175,8 @@ class _WidgetDemoState extends State<WidgetDemo> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        const Text('Dropdown Background Color', style: TextStyle(fontWeight: FontWeight.bold)),
-                        Text('Default: white | Current: ${_getColorName(_dropdownColor)}', style: const TextStyle(fontSize: 12, color: Colors.grey)),
+                        const Flexible(child: Text('Background Color', style: TextStyle(fontWeight: FontWeight.bold))),
+                        Flexible(child: Text('Default: white | Current: ${_getColorName(_dropdownColor)}', style: const TextStyle(fontSize: 12, color: Colors.grey), textAlign: TextAlign.end)),
                       ],
                     ),
                     const Text('Sets the background color of the dropdown menu.', style: TextStyle(fontSize: 12)),
