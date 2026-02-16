@@ -215,11 +215,14 @@ class _WidgetDemoState extends State<WidgetDemo> {
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
-      ),
     );
+  }
+
+  String _getColorName(Color color) {
+    if (color == Colors.white) return 'white';
+    if (color == Colors.yellow) return 'yellow';
+    if (color == Colors.lightBlue) return 'lightBlue';
+    if (color == Colors.lightGreen) return 'lightGreen';
+    return 'custom';
   }
 }
