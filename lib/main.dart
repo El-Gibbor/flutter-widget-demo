@@ -28,19 +28,20 @@ class WidgetDemo extends StatefulWidget {
   State<WidgetDemo> createState() => _WidgetDemoState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
+class _WidgetDemoState extends State<WidgetDemo> {
+  String _selectedCountry = 'Rwanda';
+  
+  // DropDown prop 1
+  bool _isExpanded = false;
+  
+  // DropDown prop 2
+  double _iconSize = 24.0;
+  
+  // DropDown prop 3
+  Color _dropdownColor = Colors.white;
 
-  void _incrementCounter() {
-    setState(() {
-      // This call to setState tells the Flutter framework that something has
-      // changed in this State, which causes it to rerun the build method below
-      // so that the display can reflect the updated values. If we changed
-      // _counter without calling setState(), then the build method would not be
-      // called again, and so nothing would appear to happen.
-      _counter++;
-    });
-  }
+  final List<String> _countries = ['Rwanda', 'Kenya', 'Nigeria', 'Ghana'];
+  final List<Color> _colorOptions = [Colors.white, Colors.yellow, Colors.lightBlue, Colors.lightGreen];
 
   @override
   Widget build(BuildContext context) {
