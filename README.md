@@ -1,20 +1,22 @@
-# Flutter Widget Demo: DropdownButton & IconButton
+# Country Selector
 
-A simple demo showcasing **DropdownButton** and **IconButton** widgets.
+A Flutter app that lets you select a country from a dropdown menu with customizable appearance settings.
 
-## Widgets Demonstrated
-
-### DropdownButton
-A dropdown menu to select a country from a list.
-
-### IconButton
-- **Refresh** - Reset counter (AppBar)
-- **Info** - Show info dialog (AppBar)
-- **Add/Remove** - Increment/decrement counter
-
-## How to Run
+## Run Instructions
 
 ```bash
 flutter pub get
 flutter run
 ```
+
+## Customizable Properties
+
+| Property | Default | Visual Effect | Why Adjust |
+|----------|---------|---------------|------------|
+| `isExpanded` | `false` | Makes dropdown fill available width | Use in forms for consistent width |
+| `iconSize` | `24.0` | Changes the dropdown arrow size | Improve visibility on larger screens |
+| `dropdownColor` | `white` | Background color of the menu | Match the app's theme |
+
+## Screenshot
+
+![App Screenshot](<img width="369" height="797" alt="Image" src="https://github.com/user-attachments/assets/9797eca3-5390-4bfb-bff7-1f73ce37a1e8" />)
